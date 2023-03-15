@@ -1,4 +1,4 @@
-let gameId;
+
 
 async function CreateGame(name) {
     const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
@@ -10,8 +10,9 @@ async function CreateGame(name) {
             name: name
         })
     });
+
     const data = await response.json();
-    gameId = data.result;
+    const gameId = data.result.split(' ')[3]; // Extract the gameId from the response
     return gameId;
 }
 export default CreateGame;

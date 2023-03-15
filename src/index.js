@@ -1,6 +1,5 @@
 import './index.css';
 import { clearMessage, displayMessage, refreshPage } from './modules/Common.js';
-import ShowScore from './modules/ShowScore.js';
 import CreateGame from './modules/CreateGame';
 import SubmitScore from './modules/SubmitScore';
 
@@ -13,7 +12,7 @@ const scoreError = document.getElementById('scoreError');
 const name = document.getElementById('name');
 const score = document.getElementById('score');
 const scoreForm = document.getElementById('scoreForm');
-let gameId;
+const gameId = CreateGame('Harvest Moon');
 const validateName = () => {
     if (!name.value) {
         displayMessage(nameError, 'Please enter a name.');
@@ -42,14 +41,24 @@ submitBtn.addEventListener('click', async (e) => {
     try {
         await validateName();
         await validateScore();
-        gameId = CreateGame(name);
-        SubmitScore(gameId);
+
+        SubmitScore(name.value, score.value, gameId);
         displayMessage(scoreSuccess, 'Score added successfully');
         scoreForm.reset();
+
+
+
     } catch (error) {
         console.error(error);
     }
 });
 
-ShowScore();
-refreshBtn.addEventListener('click', refreshPage(gameId));
+refreshBtn.addEventListener('click', async (e) => {
+    try {
+        e.preventDefault();
+        await refreshPage(gameId);
+
+    } catch (error) {
+        console.error(error);
+    }
+});

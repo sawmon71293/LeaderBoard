@@ -1,10 +1,4 @@
-const getScores = () => {
-    return JSON.parse(localStorage.getItem('scores') || JSON.stringify([]));
-}
 
-const setScores = (scores) => {
-    localStorage.setItem('scores', JSON.stringify(scores));
-}
 
 const displayMessage = (element, message) => {
     element.innerText = message;
@@ -21,9 +15,17 @@ const clearMessage = (element) => {
 const refreshPage = async (gameId) => {
     const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`);
     const data = await response.json();
-    return data.result;
+    const scores = data.result;
+    const scoreList = document.getElementById('scoreList');
+    scoreList.innerHTML = '';
+    scores.sort((a, b) => b.score - a.score);
+    scores.forEach((score) => {
+        const newElement = document.createElement('li');
+        newElement.innerText = `${score.user} : ${score.score}`;
+        scoreList.appendChild(newElement);
+    });
 };
 
 
 
-export { getScores, setScores, displayMessage, clearMessage, refreshPage };
+export { displayMessage, clearMessage, refreshPage };
