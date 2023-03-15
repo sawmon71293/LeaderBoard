@@ -42,7 +42,7 @@ submitBtn.addEventListener('click', async (e) => {
     try {
         await validateName();
         await validateScore();
-        gameId = CreateGame({ name: name.value, score: score.value });
+        gameId = CreateGame(name);
         SubmitScore(gameId);
         displayMessage(scoreSuccess, 'Score added successfully');
         scoreForm.reset();
