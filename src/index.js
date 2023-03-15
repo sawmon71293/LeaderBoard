@@ -1,7 +1,8 @@
 import './index.css';
-import addResultToScores from './modules/addResultToScores.js';
 import { clearMessage, displayMessage, refreshPage } from './modules/Common.js';
 import ShowScore from './modules/ShowScore.js';
+import CreateGame from './modules/CreateGame';
+import SubmitScore from './modules/SubmitScore';
 
 const refreshBtn = document.getElementById('refreshBtn');
 const submitBtn = document.getElementById('submitBtn');
@@ -12,7 +13,7 @@ const scoreError = document.getElementById('scoreError');
 const name = document.getElementById('name');
 const score = document.getElementById('score');
 const scoreForm = document.getElementById('scoreForm');
-
+let gameId;
 const validateName = () => {
     if (!name.value) {
         displayMessage(nameError, 'Please enter a name.');
@@ -41,7 +42,8 @@ submitBtn.addEventListener('click', async (e) => {
     try {
         await validateName();
         await validateScore();
-        addResultToScores({ name: name.value, score: score.value });
+        gameId = CreateGame({ name: name.value, score: score.value });
+        SubmitScore(gameId);
         displayMessage(scoreSuccess, 'Score added successfully');
         scoreForm.reset();
     } catch (error) {
@@ -50,4 +52,4 @@ submitBtn.addEventListener('click', async (e) => {
 });
 
 ShowScore();
-refreshBtn.addEventListener('click', refreshPage);
+refreshBtn.addEventListener('click', refreshPage(gameId));

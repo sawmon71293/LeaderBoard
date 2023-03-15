@@ -18,8 +18,12 @@ const clearMessage = (element) => {
 
 };
 
-const refreshPage = () => {
-    location.reload();
-}
+const refreshPage = async (gameId) => {
+    const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`);
+    const data = await response.json();
+    return data.result;
+};
+
+
 
 export { getScores, setScores, displayMessage, clearMessage, refreshPage };
