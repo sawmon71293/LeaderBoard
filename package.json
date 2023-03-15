@@ -2,7 +2,8 @@
   "name": "learboard",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack serve --open"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
@@ -22,3 +23,4 @@
     "@babel/eslint-parser": "^7.21.3"
   }
 }
+
