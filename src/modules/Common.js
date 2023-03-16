@@ -24,6 +24,10 @@ const refreshPage = async (gameId) => {
         newElement.innerText = `${score.user} : ${score.score}`;
         scoreList.appendChild(newElement);
     });
+    var evenLis = document.querySelectorAll("#scoreList li:nth-child(even)");
+    for (var i = 0; i < evenLis.length; i++) {
+        evenLis[i].style.backgroundColor = "#f2f2f2";
+    }
 };
 
 

@@ -44,10 +44,8 @@ submitBtn.addEventListener('click', async (e) => {
 
         SubmitScore(name.value, score.value, gameId);
         displayMessage(scoreSuccess, 'Score added successfully');
+        refreshPage(gameId);
         scoreForm.reset();
-
-
-
     } catch (error) {
         console.error(error);
     }
@@ -62,3 +60,4 @@ refreshBtn.addEventListener('click', async (e) => {
         console.error(error);
     }
 });
+refreshPage(gameId);
