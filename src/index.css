@@ -1,5 +1,12 @@
 body {
-  margin: 0 auto;
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.box-container {
+  margin: 0 50px;
+}
+.box {
+  max-width: fit-content;
+  border: 0.4px solid rgb(7, 10, 57);
 }
