@@ -6,6 +6,7 @@ body {
 .box-container {
   margin: 0 50px;
 }
+
 .box {
   max-width: fit-content;
   border: 0.4px solid rgb(7, 10, 57);
