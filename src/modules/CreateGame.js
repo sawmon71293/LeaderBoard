@@ -1,6 +1,6 @@
 
 
-async function CreateGame(name) {
+const CreateGame = async (name) => {
     const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
         method: 'POST',
         headers: {
