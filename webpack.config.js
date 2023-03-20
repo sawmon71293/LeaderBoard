@@ -11,6 +11,8 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
+        clean: true,
+        assetModuleFilename: 'img/[name][ext][query]'
     },
     module: {
         rules: [
@@ -29,9 +31,13 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
+                test: /\.html$/,
+                use: ['html-loader']
             },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
+                type: "asset/resource",
+            }
         ],
     },
     plugins: [
