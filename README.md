@@ -11,10 +11,11 @@
     - [Key Features](#key-features)
 
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
   - [Install](#install)
-  - [Usage](#usage)
+  - [Deployment](#deployment)
+  - [Live](#live)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -65,7 +66,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd your-folder
-  git clone git@github.com:sawmon71293/LeaderBoard.git
+  git clone git@github.com:sawmon71293/ToDoList.git
 ```
 
 ### Install
@@ -73,9 +74,8 @@ Clone this repository to your desired folder:
 Install this project with:
 
 - npm install
-- npm run build
-
-
+- npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+- npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
 
 ### Deployment
 
@@ -85,6 +85,10 @@ You can deploy this project using:
 - npm run build
 
 <!-- AUTHORS -->
+
+### Live
+
+- Live: [@live](https://sawmon71293.github.io/LeaderBoard/)
 
 ## 👥 Author <a name="authors"></a>
 
