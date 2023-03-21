@@ -1,6 +1,7 @@
 <a name="readme-top"></a>
+![LeaderBoard](https://user-images.githubusercontent.com/102650102/226611994-e3e6fa33-0339-42a1-99c4-5eb5eb15b310.png)
 
-![S](https://user-images.githubusercontent.com/102650102/212134190-7ac324a6-f323-4c2b-ac30-44add2cedd26.png)
+
 
 # 📗 Table of Contents
 
@@ -84,11 +85,10 @@ You can deploy this project using:
 - gitHub pages/
 - npm run build
 
-<!-- AUTHORS -->
+### Live 
+- Live : [@live](https://sawmon71293.github.io/LeaderBoard/)
 
-### Live
-
-- Live: [@live](https://sawmon71293.github.io/LeaderBoard/)
+<!-- live -->
 
 ## 👥 Author <a name="authors"></a>
 
