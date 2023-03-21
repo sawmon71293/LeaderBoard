@@ -1,6 +1,7 @@
 <a name="readme-top"></a>
+![LeaderBoard](https://user-images.githubusercontent.com/102650102/226611994-e3e6fa33-0339-42a1-99c4-5eb5eb15b310.png)
 
-![S](https://user-images.githubusercontent.com/102650102/212134190-7ac324a6-f323-4c2b-ac30-44add2cedd26.png)
+
 
 # 📗 Table of Contents
 
@@ -11,10 +12,11 @@
     - [Key Features](#key-features)
 
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+   - [Setup](#setup)
   - [Install](#install)
-  - [Usage](#usage)
+  - [Deployment](#deployment)
+  - [Live](#live)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
