@@ -86,6 +86,9 @@ You can deploy this project using:
 - gitHub pages/
 - npm run build
 
+### Live 
+- Live : [@live](https://sawmon71293.github.io/LeaderBoard/)
+
 <!-- AUTHORS -->
 
 ## 👥 Author <a name="authors"></a>
