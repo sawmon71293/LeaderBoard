@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
-![LeaderBoard](https://user-images.githubusercontent.com/102650102/226611994-e3e6fa33-0339-42a1-99c4-5eb5eb15b310.png)
+
+![leaderboard](https://user-images.githubusercontent.com/102650102/230633914-b57476ca-dc00-429a-9e80-98e53cab8ef6.png)
 
 
 
@@ -28,7 +29,7 @@
 
 # 📖 LeaderBoard <a name="about-project"></a>
 
-**LeaderBoard** is an app utilizing ES6 modules, callback and promises and webpack
+**LeaderBoard** is an app utilizing ES6 modules, callback, promises and webpack
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -67,7 +68,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd your-folder
-  git clone git@github.com:sawmon71293/ToDoList.git
+  git clone git@github.com:sawmon71293/LeaderBoard.git
 ```
 
 ### Install
@@ -75,15 +76,14 @@ Clone this repository to your desired folder:
 Install this project with:
 
 - npm install
-- npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-- npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
 
 ### Deployment
 
 You can deploy this project using:
 
-- gitHub pages/
 - npm run build
+- npm run start
 
 ### Live 
 - Live : [@live](https://sawmon71293.github.io/LeaderBoard/)
