@@ -1,7 +1,6 @@
 <a name="readme-top"></a>
 
-![leaderboard](https://user-images.githubusercontent.com/102650102/230633914-b57476ca-dc00-429a-9e80-98e53cab8ef6.png)
-
+![leaderboard](https://user-images.githubusercontent.com/102650102/230634683-2a2f19b1-986f-46ae-864f-d3eb777a3800.png)
 
 
 # 📗 Table of Contents
